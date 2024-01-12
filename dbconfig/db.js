@@ -1,0 +1,1 @@
+exports.mongoURI = "//add you URI of mongodb";

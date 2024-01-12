@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "2c6f6bd8-28b3-479a-b99f-534858a39472",
+		"name": "Book_CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27028564"
+	},
+	"item": [
+		{
+			"name": "createBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Rd varma\",\r\n    \"description\":\"mathes\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "messageGetByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/message/:messageId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"message",
+						":messageId"
+					],
+					"variable": [
+						{
+							"key": "messageId",
+							"value": "65a10fb86a82dffc88fe5b0f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meesageUpdateByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"va\",\r\n    \"description\":\"s\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/message/:messageId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"message",
+						":messageId"
+					],
+					"variable": [
+						{
+							"key": "messageId",
+							"value": "65a10fb86a82dffc88fe5b0f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMessageByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/message/:messageId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"message",
+						":messageId"
+					],
+					"variable": [
+						{
+							"key": "messageId",
+							"value": "65a10fb86a82dffc88fe5b0f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
